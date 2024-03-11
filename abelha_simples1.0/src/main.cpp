@@ -71,10 +71,11 @@ void setup() {
   sensoresBegin();
 }
 
+uint8_t controle = 0; //variável para manter a certeza de 10 leituras por minuto
+
 void loop() {
   //Estrutura de super loop
   unsigned long tempoAtual = millis();
-  uint8_t controle = 0; //variável para manter a certeza de 10 leituras por minuto
 
   //Tarefa 1, faz 10 leituras em 1 minuto,
   //realizando o somatório dos dados
